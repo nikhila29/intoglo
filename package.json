@@ -1,0 +1,25 @@
+{
+  "name": "document-backend",
+  "version": "1.0.0",
+  "description": "Document Management Backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "watch": "nodemon app",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix document-frontend && npm run build --prefix document-frontend"
+  },
+  "author": "Nikhilapatel Badri",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.7.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
